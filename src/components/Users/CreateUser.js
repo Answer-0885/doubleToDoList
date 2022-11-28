@@ -6,7 +6,7 @@ import React, {useState} from "react"
 const CreateUser = (props) => {
 
     const[inputName, setInputName] = useState(''); // где inputName - переменная состояния, а setInputName - функция.
-    const[inputAge, setInputAge] = useState(''); 
+    const[inputAge, setInputAge] = useState(''); // где inputAge - переменная состояния, а setInputAge - функция.
 
     const CreateUserHandler = (event) => {// Создаёт нового пользователя на основе введённых данных в поля.
            event.preventDefault();
