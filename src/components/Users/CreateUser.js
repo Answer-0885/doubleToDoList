@@ -18,8 +18,8 @@ const CreateUser = (props) => {
            if(+inputAge < 1){
             return;
            }
-           console.log(inputName,inputAge);
            // Стираем значения из переменных inputName и inputName в момент нажатия на кнопку Button;
+          props.onCreateUser(inputName, inputAge)
            setInputName('');
            setInputAge('');
     };
