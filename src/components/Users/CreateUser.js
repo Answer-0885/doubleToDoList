@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, Fragment} from "react"
 import Card from "../UI/Card"
 import Button from "../UI/Button"
 
@@ -47,7 +47,8 @@ const CreateUser = (props) => {
     }
 
    return (
-    <div>
+    // Записываем вместо div и не забываем импортировать в начале компонента
+    <Fragment>
       {error && (
         <ErrorModal
           onCloseModal={errorHandler}
@@ -74,7 +75,7 @@ const CreateUser = (props) => {
           <Button type="submit">Добавить Пользователя</Button>
         </form>
       </Card>
-    </div>
+    </Fragment>
   );
 }
 export default CreateUser;

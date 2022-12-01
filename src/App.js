@@ -17,10 +17,12 @@ const App = () => {
     })
   }
 
-  return <div>
-    <CreateUser onCreateUser={CreateUserHandler}/>
-    <UserList users={userList}/>
-  </div>;
+  return (
+  <React.Fragment>
+          <CreateUser onCreateUser={CreateUserHandler}/>
+          <UserList users={userList}/>
+  </React.Fragment>
+  )
 };
 
 export default App;
