@@ -8,4 +8,8 @@ html {
 
 body {
   margin: 0;
+  background-color: rgb(227, 138, 83);
+}
+h1{
+  text-align: center;
 }

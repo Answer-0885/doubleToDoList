@@ -19,6 +19,7 @@ const App = () => {
 
   return (
   <React.Fragment>
+          <h1>Приложение по учёту возраста людей</h1>  
           <CreateUser onCreateUser={CreateUserHandler}/>
           <UserList users={userList}/>
   </React.Fragment>
